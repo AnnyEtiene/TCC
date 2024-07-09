@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+:root{
+    --verdeescuro: #008542;
+    --verdeclaro: #57AF82;
+    --branco: #ffffff;
+    --cinza: #e0e0e0;
+    --preto: #2E2F2F;
+    --amarelo: #FCC72C;
+}
+
+
+
+.navbar {
+    background-color:var(--verdeescuro);
+    padding: 10px;
+    color: white;
+    position: fixed; /* Fixa o header no topo */
+    width: 100%;
+    z-index: 1000; /* Mantém o header acima do conteúdo */
+    justify-content: space-between;
+
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    margin-right: 20px;
+    width: 200px;
+    
+    
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+}
+
+.navbar-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline var(--amarelo); /* Sublinhar o texto ao passar o mouse */
+}
+
+.container {
+    padding: 80px 20px 20px 20px; /* Adiciona espaço no topo para o header fixo */
+    text-align: center;
+}
+
+.jumbotron {
+    background-color: #e0e0e0;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    margin-bottom: 10px;
+}
+
+.jumbotron p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: var(--verdeescuro);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: var(--verdeclaro);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #004080;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #003060;
+}
+
+.teste{
+    background-color: var(--cinza);
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    
+}
+
+.teste2{
+    background-color: var(--branco);
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
